@@ -1,0 +1,204 @@
+html{
+    scroll-behavior: smooth;
+}
+a.navbar-brand.ml-lg-5.ml-md-0 {
+    font-family: 'Pacifico', cursive;
+    font-size: 30px;
+}
+header.masthead {
+    /* background-image: url(../img/page-top1.jpg);
+    background-size: cover;
+    height: 800px; */
+    text-align: center;
+    color: rgb(0, 0, 0);
+    background-image: url(../img/page-top1.jpg);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    background-size: cover;
+    height: 760px;
+    position: relative;
+}
+.masthead-subheading.pt-5 {
+    font-size: 30px;
+    position: absolute;
+    top: 170px;
+    left: 24%;
+    z-index: 1;
+    color: white;
+    text-shadow: 4px 2px #9e4949;
+    animation: dilen 2s forwards;
+    transition: 3s;
+    animation-delay: 0s;
+    opacity: 0;
+}
+/* .container.text-center {
+    padding-top: 13rem;
+} */
+.masthead-heading.text-uppercase{
+	font-size: 58px;
+	position: absolute;
+	top: 254px;
+	left: 25%;
+	z-index: 1;
+    color: white;
+    text-shadow: 4px 2px #9e4949;
+    animation: dilen1 2s forwards;
+    transition: 3s;
+    animation-delay: 2s;
+    opacity: 0;
+
+}
+@keyframes dilen1 {
+    0%{
+        opacity: 0;
+        top: 400px;
+    }
+    100%{
+        opacity: 1;
+        top: 254px;
+    }
+}
+a.btn.btn-primary.btn-xl.text-uppercase{
+	font-size: 24px;
+	position: absolute;
+	z-index: 1;
+	top: 50%;
+	right: 44%;
+    background-color: #ebd9cb;
+    border: palegoldenrod;
+    animation: dilen2 2s forwards;
+    transition: 3s;
+    animation-delay: 3s;
+    opacity: 0 ;
+    
+}
+
+.page-section {
+    padding: 6rem;
+}
+.page-section.bg-light {
+    background-image: url(../img/contact/contact.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 760px;
+}
+input.form-control {
+    height: 63px;
+}
+.container.row.text-center.pt-5.col-lg-3 {
+    position: relative;
+}
+.chunho {
+    position: absolute;
+    z-index: 1;
+    top: 70px;
+    left: 26px;
+    width: 80%;
+    text-align: justify;
+    color: white;
+    transition: 0.4s;
+    opacity: 0;
+}
+.col-lg-3:hover .chunho{
+    top: 25px;
+    left: 26px;
+    opacity: 1;
+    
+}
+.col-lg-3:hover {
+    top: -10px;  
+}
+.col-lg-3:hover .den{
+    background-color: #00000029;
+    opacity: 1;
+    
+}
+.den {
+    background-color: #00000029;
+    position: absolute;
+    z-index: 1;
+    top: 0px;
+    left: 14px;
+    width: 90%;
+    height: 80%;
+    opacity: 0 ;
+}
+@media only screen and (max-width:960px) {
+    
+    a.btn.btn-primary.btn-xl.text-uppercase{
+        font-size: 18px;
+        top: 60%;
+        right: 41%;
+    }
+}
+@media only screen and (max-width:768px) {
+    .den {
+        width: 95%;
+    }
+    .masthead-subheading.pt-5{
+        font-size: 23px;
+    }
+    .masthead-heading.text-uppercase{
+        font-size:  44px ;
+        left: 23%;
+    }
+    a.btn.btn-primary.btn-xl.text-uppercase{
+        font-size: 18px;
+        top: 60%;
+        right: 38%;
+    }
+}
+@media only screen and (max-width:540px) {
+    .den {
+        width: 92%;
+    }
+    .masthead-subheading.pt-5{
+        font-size: 17px;
+    }
+    .masthead-heading.text-uppercase{
+        font-size:  32px ;
+    }
+    a.btn.btn-primary.btn-xl.text-uppercase{
+        font-size: 13px;
+        top: 54%;
+        right: 38%;
+    }
+}
+
+a.btn.btn-primary.btn-xl.text-uppercase.text-center:hover {
+    background-color: wheat;
+    color: beige;
+}
+@keyframes dilen {
+    0%{
+        opacity: 0;
+        top: 400px;
+    }
+    100%{
+        opacity: 1;
+        top: 170px;
+    }
+}
+@keyframes dilen2 {
+    0%{
+        opacity: 0;
+        top: 400px;
+    }
+    100%{
+        opacity: 1;
+        top: 50%;
+    }
+}
+a.nav-link.active {
+    border-bottom: 1px solid;
+    border-radius: 1px;
+}
+a.nav-link:hover {
+    border-bottom: 1px solid;
+    border-radius: 1px;
+}
+.col-lg-3{
+    opacity: 0;
+    top:50px;
+}
